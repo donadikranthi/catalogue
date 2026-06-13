@@ -5,7 +5,7 @@ pipeline {
     environment {
         COURSE = "Jenkins"
         appVersion = ""
-        ACC_ID = "457393219936"
+        ACC_ID = "327425719057"
         PROJECT = "roboshop"
         COMPONENT = "catalogue"
     }
@@ -22,7 +22,7 @@ pipeline {
                     appVersion = packageJSON.version
                     echo "app version: ${appVersion}"
                 }
-            }
+            }0
         }
         stage('Install Dependencies') {
             steps {
