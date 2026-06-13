@@ -1,10 +1,6 @@
 pipeline {
-    // These are pre-build sections
-    agent {
-        node {
-            label 'AGENT-1'
-        }
-    }
+    agent any // Allocates any available executor for the entire pipeline
+    
     environment {
         COURSE = "Jenkins"
         appVersion = "latest"
