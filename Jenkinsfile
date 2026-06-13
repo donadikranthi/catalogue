@@ -1,10 +1,7 @@
 pipeline {
     // These are pre-build sections
-    agent {
-        node {
-            label 'AGENT-1'
-        }
-    }
+    agent any 
+    
     environment {
         COURSE = "Jenkins"
         appVersion = ""
