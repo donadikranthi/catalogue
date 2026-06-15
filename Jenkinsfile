@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script{
                     sh """
-                        npm install
+                        npm install python3 -m pip install -r requirements.txt
                     """
                 }
             }
