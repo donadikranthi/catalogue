@@ -1,14 +1,11 @@
 pipeline {
     // These are pre-build sections
-    agent {
-        node {
-            label 'AGENT-1'
-        }
-    }
+    agent any
+
     environment {
         COURSE = "Jenkins"
         appVersion = ""
-        ACC_ID = "160885265516"
+        ACC_ID = "327425719057"
         PROJECT = "roboshop"
         COMPONENT = "catalogue"
     }
