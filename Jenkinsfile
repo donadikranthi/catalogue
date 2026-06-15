@@ -9,10 +9,10 @@ pipeline {
         PROJECT = "roboshop"
         COMPONENT = "catalogue"
     }
-    options {
-        timeout(time: 10, unit: 'MINUTES') 
-        disableConcurrentBuilds()
-    }
+    // options {
+    //     timeout(time: 10, unit: 'MINUTES') 
+    //     disableConcurrentBuilds()
+    // }
     // This is build section
      // This is build section
     stages {
@@ -43,7 +43,7 @@ pipeline {
                 }
             }
         }
-        
+
     
     post {
         always {
