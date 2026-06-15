@@ -27,9 +27,12 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script{
+                    sh """
+                 
                     sudo dnf module list nodejs
                     sudo dnf module enable nodejs:20 -y
                             sudo dnf install nodejs -y
+                        """
                 }
             }
         }
