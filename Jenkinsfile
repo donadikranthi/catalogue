@@ -14,6 +14,7 @@ pipeline {
         disableConcurrentBuilds()
     }
     // This is build section
+     // This is build section
     stages {
         stage('Read Version') {
             steps {
@@ -28,11 +29,17 @@ pipeline {
             steps {
                 script{
                     sh """
-                 
-                    sudo dnf module list nodejs
-                    sudo dnf module enable nodejs:20 -y
-                            sudo dnf install nodejs -y
-                        """
+                        npm install
+                    """
+                }
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                script{
+                    sh """
+                        npm test
+                    """
                 }
             }
         }
