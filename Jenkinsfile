@@ -31,18 +31,18 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script{
-                    sh """
+                    sh '''
                         npm install
-                    """
+                    '''
                 }
             }
         }
         stage('Unit Test') {
             steps {
                 script{
-                    sh """
+                    sh '''
                         npm test
-                    """
+                    '''
                 }
             }
         }
