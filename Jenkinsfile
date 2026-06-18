@@ -6,8 +6,7 @@ pipeline {
         }
      }
  
-
- HEllo 
+ 
     environment {
         COURSE = "Jenkins"
         appVersion = ""
